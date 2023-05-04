@@ -1,0 +1,76 @@
+
+/*
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "goodgo",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "goodgo (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "goodgo (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}*/
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "zona",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_zona.dart",
+            "args": [
+                "--flavor",
+                "zona"
+            ]
+        },
+        {
+            "name": "Coventry",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_Coventry.dart",
+            "args": [
+                "--flavor",
+                "Coventry"
+            ]
+        },
+        {
+            "name": "Palce4Place",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_Place4Place.dart",
+            "args": [
+                "--flavor",
+                "Place4Place"
+            ]
+        },
+        {
+            "name": "WayHome",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_WayHome.dart",
+            "args": [
+                "--flavor",
+                "WayHome"
+            ],
+        },
+    ]
+}

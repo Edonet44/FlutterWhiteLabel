@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_zona.dart
+ASSET_PREFIX=zona
+BUNDLE_NAME=GoodGo AltraZona
+BUNDLE_DISPLAY_NAME=GoodGo AltraZona
