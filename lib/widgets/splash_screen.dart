@@ -10,7 +10,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // mostra il logo per un secondo
-    Future.delayed(const Duration(seconds: 7)).then((_) {
+    Future.delayed(const Duration(seconds: 10)).then((_) {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
             builder: (BuildContext context) =>
@@ -21,7 +21,7 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       // backgroundColor: F.background ?? Colors.white,
       body: Container(
-        height: MediaQuery.of(context).size.height ,
+        height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: Image.asset(
           F.splshimg,
