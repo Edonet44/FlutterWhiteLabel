@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:goodgo/pages/OnBoardScreen.dart';
 import 'flavors.dart';
 import 'pages/auth/Login_screen.dart';
 import 'pages/auth/old/login_screen2.dart';
@@ -26,12 +27,15 @@ class App extends StatelessWidget {
 
             //QUANDO SI VUOLE GESTIRE UNA PARTE DEL PUNTO DI ENTRATA BASTA TOGLIERE IL COMMENTO
 
-            //splash Screen iniziale che punta allo [SplashCustomButton] che va alla login
-            //const SplashScreen()
+            //OnBoard Screen gestione dell onboardscreen
+            const OnBoardScreen()
 
-            //Login old senza splashscreen
-            //CARTELLA PAGES-AUTH-OLD->login_screen2.dart
-            const LoginPage()
+        //splash Screen iniziale che punta allo [SplashCustomButton] che va alla login
+        //const SplashScreen()
+
+        //Login old senza splashscreen
+        //CARTELLA PAGES-AUTH-OLD->login_screen2.dart
+        //const LoginPage()
 
         //Login nuova senza splashScreen
         //CARTELLA PAGES-AUTH-Login_screen.dart

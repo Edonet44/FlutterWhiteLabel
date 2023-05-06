@@ -117,4 +117,112 @@ class F {
         return '';
     }
   }
+
+  //OnBoardScreen Gestione logo-immagini-titolo-sottotitolo
+//nb ricordare di inserire le immagini anche degli altri flavors
+  static List<Map<String, String>> splashString() {
+    switch (appFlavor) {
+      case Flavor.zona:
+        return [
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Esplora la nostra app",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, \n Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine":
+                "android/app/src/zona/assets/onboardScreenImage/Onboard1.png"
+          },
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Inizia a guadagnare",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, \n Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine":
+                "android/app/src/zona/assets/onboardScreenImage/Onboard2.png"
+          },
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Partecipa alle competizioni",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, \n Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine":
+                "android/app/src/zona/assets/onboardScreenImage/Onboard3.png"
+          },
+        ];
+      case Flavor.place4place:
+        return [
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Esplora la nostra app",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, \n Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine": ""
+          },
+          {
+            "logo": "",
+            "titolo": "Entra nel nostro mondo",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo,\n Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine": ""
+          },
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Continua a vedere i nostri premi",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo,\n Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine": ""
+          },
+        ];
+      case Flavor.coventry:
+        return [
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Esplora la nostra app",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine": ""
+          },
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Entra nel nostro mondo",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine": ""
+          },
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Continua a vedere i nostri premi",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine": ""
+          },
+        ];
+      case Flavor.wayhome:
+        return [
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Esplora la nostra app",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine": ""
+          },
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Entra nel nostro mondo",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine": ""
+          },
+          {
+            "logo": "android/app/src/zona/assets/logo.png",
+            "titolo": "Continua a vedere i nostri premi",
+            "sottotitolo":
+                "Questo è la desrcizione del sottotitolo, Questo è la desrcizione del sottotitolo,Questo è la desrcizione del sottotitolo",
+            "immagine": ""
+          },
+        ];
+      default:
+        return [];
+    }
+  }
 }
