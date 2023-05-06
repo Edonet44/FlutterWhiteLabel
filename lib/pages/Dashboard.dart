@@ -1,27 +1,27 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:goodgo/widgets/widgt_customAppbar.dart';
+import 'package:goodgo/widgets/appbar/widgt_customAppbar.dart';
 import 'package:goodgo/widgets/widgt_description.dart';
 import 'package:goodgo/widgets/widgt_moduli.dart';
-import 'package:goodgo/widgets/widgt_navDrawer.dart';
-import '../widgets/widgt_userModules.dart';
+import 'package:goodgo/widgets/drawer/widgt_navDrawer.dart';
+import 'package:goodgo/widgets/widgt_userModules.dart';
 
-class Layout2 extends StatelessWidget {
-//const Layout2({super.key});
-  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+///Classe Dashboard dove inserire i vari oggetti
 
+class Dashboard extends StatelessWidget {
+  Dashboard({super.key});
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      drawer: Nav_drawer(),
+      drawer: const Nav_drawer(),
       backgroundColor: Colors.white60.withOpacity(0.90),
       body: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             CustomAppBar(scaffoldKey: _scaffoldKey),
-            Descrizione(),
+            const Descrizione(),
             Moduli(),
             UserModule()
           ],

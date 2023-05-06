@@ -1,13 +1,12 @@
 import 'dart:convert';
 import 'dart:math';
-import 'package:goodgo/model/articoli/articles.dart';
+import 'package:goodgo/flavors.dart';
+import 'package:goodgo/model/keycloak/keycloack.dart';
 import 'package:goodgo/model/todos/cl_todos.dart';
-import '../../flavors.dart';
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 
-import '../../model/keycloak/keycloack.dart';
 
 class ApiServices {
 //passo la stringa Api della classe flavors
@@ -170,7 +169,6 @@ class ApiServices {
     }
   }
 }
-
 
 
 

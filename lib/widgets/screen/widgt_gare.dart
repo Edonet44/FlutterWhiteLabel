@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goodgo/pages/gare_screen.dart';
+import 'package:goodgo/pages/screen/gare_screen.dart';
 import '../../utils/strings.dart';
 
 class Gare extends StatelessWidget {

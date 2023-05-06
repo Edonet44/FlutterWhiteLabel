@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../pages/tracce_screen.dart';
-import '../../utils/strings.dart';
+import 'package:goodgo/pages/screen/tracce_screen.dart';
+import 'package:goodgo/utils/strings.dart';
+
 
 class Tracce extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class Tracce extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => TracceScreen()),
+          MaterialPageRoute(builder: (context) => const TracceScreen()),
         );
       },
       child: Container(

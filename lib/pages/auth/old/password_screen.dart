@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'login_screen.dart';
+import 'login_screen2.dart';
 
 class Password extends StatefulWidget {
   const Password({Key? key}) : super(key: key);

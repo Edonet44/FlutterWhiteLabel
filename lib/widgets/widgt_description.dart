@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:goodgo/widgets/app_text.dart';
+import 'package:goodgo/utils/strings.dart';
 
-import '../utils/strings.dart';
+
+
 
 //classe oggetto per la descrizione
 /// Strutturato: Container-Colonna--Riga-Padding

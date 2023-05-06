@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../widgets/home_appbar.dart';
-import '../widgets/widgt_navDrawer.dart';
+import 'package:goodgo/widgets/appbar/widgt_home_appbar.dart';
+import 'package:goodgo/widgets/drawer/widgt_navDrawer.dart';
+
+
 //Screen dei Badges
 
 
-class BadgeScreen extends ConsumerWidget {
-  const BadgeScreen({super.key});
+class GareScreen extends ConsumerWidget {
+  const GareScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -17,7 +19,7 @@ class BadgeScreen extends ConsumerWidget {
         body: Container(
           child: Column(
             children: [HomeAppBar(scaffoldKey: _scaffoldKey),
-            Text('Hello badges')],
+            Text('Hello Gare')],
           ),
         ),
       );

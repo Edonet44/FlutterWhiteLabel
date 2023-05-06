@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../pages/bici_screen.dart';
-import '../../utils/strings.dart';
+import 'package:goodgo/pages/screen/bici_screen.dart';
+import 'package:goodgo/utils/strings.dart';
 
 class Bici extends StatelessWidget {
   @override

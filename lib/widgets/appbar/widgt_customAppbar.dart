@@ -1,9 +1,13 @@
 import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:goodgo/pages/screen/registrazione.dart';
 
-import '../pages/avvio_screen.dart';
+
+///Classe widget Custom App bar con immagine rounded e bottone registra nuovo progetto in fondo al centro
+///icona per richiamo al drawer
+///icona people
+///
 
 class CustomAppBar extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;
@@ -45,7 +49,7 @@ class CustomAppBar extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => AvvioRegistrazione()),
+                        builder: (context) => const AvvioRegistrazione()),
                   );
                 },
                 child: const Column(

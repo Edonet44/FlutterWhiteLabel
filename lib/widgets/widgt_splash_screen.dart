@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:goodgo/flavors.dart';
-import 'package:goodgo/pages/auth/login_screen.dart';
+import 'package:goodgo/pages/auth/old/login_screen2.dart';
 
-import 'buttons/widgt_button.dart';
+import 'buttons/widgt_spalshbutton.dart';
 
 //oggetto per la gestione dello splashscreen
 
@@ -11,6 +11,8 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // gestione senza bottone e con redirect dopo un secondo alla login
+
     // mostra il logo per un secondo
     // Future.delayed(const Duration(seconds: 10)).then((_) {
     //   Navigator.of(context).pushReplacement(
@@ -32,7 +34,9 @@ class SplashScreen extends StatelessWidget {
     //   ),
     // );
 
- return Scaffold(
+//gestione con bottone che dopo premuto va alla login
+
+    return Scaffold(
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -47,7 +51,7 @@ class SplashScreen extends StatelessWidget {
             child: Container(
               width: MediaQuery.of(context).size.width,
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: CustomButton(),
+              child: SplashCustomButton(),
             ),
           ),
         ],
@@ -55,4 +59,3 @@ class SplashScreen extends StatelessWidget {
     );
   }
 }
-

@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:goodgo/model/generics/cl_custom_iterable.dart';
-import 'package:goodgo/pages/badges_screen.dart';
-import 'package:goodgo/pages/bici_screen.dart';
-import 'package:goodgo/pages/gare_screen.dart';
-import 'package:goodgo/pages/tracce_screen.dart';
-import 'package:goodgo/widgets/app_text.dart';
-import 'package:goodgo/widgets/screen/widgt_badges.dart';
-import 'package:goodgo/widgets/screen/widgt_gare.dart';
-import 'package:goodgo/widgets/screen/widgt_tracce.dart';
-import '../model/design/cl_module.dart';
-import 'screen/widgt_bici.dart';
-import '../utils/strings.dart';
+import 'package:goodgo/pages/screen/badges_screen.dart';
+import 'package:goodgo/pages/screen/bici_screen.dart';
+import 'package:goodgo/pages/screen/gare_screen.dart';
+import 'package:goodgo/pages/screen/tracce_screen.dart';
 import 'widgt_SmartdeviceBox.dart';
+
+/// Classe che visualizza i modelli dentro una gridView
 
 class UserModule extends StatelessWidget {
   //const UserModule({super.key});
@@ -51,6 +46,8 @@ class UserModule extends StatelessWidget {
       height: 180,
       child: Row(
         children: [
+          // visualizza i dati divisi dentro una lista
+
           // Flexible(
           //     flex: 1,
           //     child: Container(
@@ -151,6 +148,8 @@ class UserModule extends StatelessWidget {
           //       ),
           //     )),
 
+          //visulizza i dati del modello dentro una Griglia
+
           Expanded(
               child: GridView.builder(
                   padding: const EdgeInsets.all(25),
@@ -174,6 +173,8 @@ class UserModule extends StatelessWidget {
                               builder: (context) => routeConfig.page),
                         );
                       },
+
+                      //recupera i modelli per farli diventare rounded
                       child: SmartDevBox(
                           smtDevboxName: myIterable.elementAt(index)[0],
                           iconPath: myIterable.elementAt(index)[1]),

@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:goodgo/pages/2Layout.dart';
-import 'package:goodgo/pages/avvio_screen.dart';
-import 'package:goodgo/pages/badges_screen.dart';
-import 'package:goodgo/pages/bici_screen.dart';
-import 'package:goodgo/pages/tracce_screen.dart';
-import 'package:goodgo/widgets/widgt_drawerItem.dart';
+import 'package:goodgo/pages/Dashboard.dart';
+import 'package:goodgo/pages/screen/registrazione.dart';
+import 'package:goodgo/pages/screen/badges_screen.dart';
+import 'package:goodgo/pages/screen/bici_screen.dart';
+import 'package:goodgo/pages/screen/tracce_screen.dart';
+import 'package:goodgo/widgets/drawer/widgt_drawerItem.dart';
+
+
+///Classe che crea un Drawer customizzato
+///
+///
+///
 
 class Nav_drawer extends StatelessWidget {
   const Nav_drawer({super.key});
@@ -93,7 +99,7 @@ class Nav_drawer extends StatelessWidget {
     switch (index) {
       case 0:
         Navigator.push(
-            context, MaterialPageRoute(builder: ((context) => Layout2())));
+            context, MaterialPageRoute(builder: ((context) => Dashboard())));
         break;
       case 1:
         Navigator.push(context,
@@ -117,17 +123,17 @@ class Nav_drawer extends StatelessWidget {
         break;
       case 5:
         Navigator.push(
-            context, MaterialPageRoute(builder: ((context) => Layout2())));
+            context, MaterialPageRoute(builder: ((context) => Dashboard())));
 
         break;
       case 6:
         Navigator.push(
-            context, MaterialPageRoute(builder: ((context) => Layout2())));
+            context, MaterialPageRoute(builder: ((context) => Dashboard())));
 
         break;
       case 7:
         Navigator.push(
-            context, MaterialPageRoute(builder: ((context) => Layout2())));
+            context, MaterialPageRoute(builder: ((context) => Dashboard())));
 
         break;
       default:

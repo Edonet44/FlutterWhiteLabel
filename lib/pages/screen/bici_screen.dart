@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../widgets/home_appbar.dart';
-import '../widgets/widgt_navDrawer.dart';
+import 'package:goodgo/widgets/appbar/widgt_home_appbar.dart';
+import 'package:goodgo/widgets/drawer/widgt_navDrawer.dart';
 //Screen dei Badges
 
-class TracceScreen extends ConsumerWidget {
-  const TracceScreen({super.key});
+class BiciScreen extends ConsumerWidget {
+  const BiciScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -17,7 +17,7 @@ class TracceScreen extends ConsumerWidget {
         child: Column(
           children: [
             HomeAppBar(scaffoldKey: _scaffoldKey),
-            Text('Hello tracce')
+            Center(child: Text('Hello bici')),
           ],
         ),
       ),

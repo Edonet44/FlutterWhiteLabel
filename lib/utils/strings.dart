@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names, non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 class Strings {
@@ -43,5 +45,5 @@ class Strings {
   static const Color APP_COLOR_BORDER_BADGES =
       Color.fromARGB(255, 183, 155, 71);
   static Color APP_COLOR_MODULE_BG_BADGES =
-      Color.fromARGB(255, 20, 153, 64).withOpacity(0.2);
+      const Color.fromARGB(255, 20, 153, 64).withOpacity(0.2);
 }

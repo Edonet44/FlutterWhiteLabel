@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'app_text.dart';
+import 'package:goodgo/widgets/text/app_text.dart';
+
 
 class HomeAppBar extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;

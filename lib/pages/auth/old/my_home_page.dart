@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:goodgo/flavors.dart';
+import 'package:goodgo/model/generics/cl_custom_iterable.dart';
 import 'package:goodgo/model/todos/cl_todos.dart';
-import 'package:goodgo/widgets/app_large_text.dart';
-import 'package:goodgo/widgets/app_text.dart';
-import '../flavors.dart';
-import '../model/generics/cl_custom_iterable.dart';
-import '../providers/todo_providers.dart';
-import '../widgets/home_appbar.dart';
-import '../widgets/widgt_SmartdeviceBox.dart';
-import '../widgets/widgt_circularbutton.dart';
-import '../providers/user_list_providers.dart';
-import '../widgets/widgt_navDrawer.dart';
-import '2Layout.dart';
+import 'package:goodgo/pages/Dashboard.dart';
+import 'package:goodgo/providers/todo_providers.dart';
+import 'package:goodgo/widgets/appbar/widgt_home_appbar.dart';
+import 'package:goodgo/widgets/buttons/widgt_circularbutton.dart';
+import 'package:goodgo/widgets/drawer/widgt_navDrawer.dart';
+import 'package:goodgo/widgets/text/app_text.dart';
+import 'package:goodgo/widgets/widgt_SmartdeviceBox.dart';
+
 
 class MyHomePage extends ConsumerStatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -86,7 +85,7 @@ class _MyHomePage extends ConsumerState<MyHomePage> {
                           // per ora passa al nuovo layout
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => Layout2()),
+                            MaterialPageRoute(builder: (context) => Dashboard()),
                           );
                         },
                         height: 150,

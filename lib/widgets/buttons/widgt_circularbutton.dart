@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goodgo/widgets/app_text.dart';
+import 'package:goodgo/widgets/text/app_text.dart';
 
 class CustomCircularButton extends StatelessWidget {
   final IconData icon;

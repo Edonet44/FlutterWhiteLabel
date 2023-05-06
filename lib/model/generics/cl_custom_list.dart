@@ -1,6 +1,8 @@
 ///
-///Classe generica per l utilizzo di una lista
-///
+///Classe generica  [List]  per l utilizzo in una Classe di una lista in tutto il programma
+///                           :Accetta una lista generica
+///                           :Crea il Crud e alcuni metodi principali della Collection list
+///                           :Aggiungere nel caso altri metodi
 
 class CustomList<T> {
   List<T> _items;

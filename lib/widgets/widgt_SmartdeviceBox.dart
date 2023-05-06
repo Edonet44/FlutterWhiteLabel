@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:goodgo/widgets/app_text.dart';
+import 'package:goodgo/widgets/text/app_text.dart';
+
+//classe oggetto che crea i modelli con il bordo arrotondato
 
 class SmartDevBox extends StatelessWidget {
   const SmartDevBox({

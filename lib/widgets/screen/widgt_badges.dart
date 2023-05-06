@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../pages/badges_screen.dart';
-import '../../utils/strings.dart';
+import 'package:goodgo/pages/screen/badges_screen.dart';
+import 'package:goodgo/utils/strings.dart';
+
 
 class Badges extends StatelessWidget {
   @override

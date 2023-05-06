@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:goodgo/model/design/cl_module.dart';
-import '../model/design/cl_moduli.dart';
-import 'screen/widgt_bici.dart';
-import 'widgt_userModules.dart';
 
 ///Classe [deprecated]oggetto Moduli che utilizza il costruttore della classe cl_module.dart per recuperare i dati dei moduli
 
